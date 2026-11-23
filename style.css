@@ -1,0 +1,81 @@
+/* Palette from Google Arts & Culture */
+:root {
+    --color-1: #140d12;
+    --color-2: #5a91d2;
+    --color-3: #d8e4ea;
+    --color-4: #521310;
+    --color-5: #a94d00;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-1);
+    color: var(--color-3);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: var(--color-5);
+}
+
+h1 {
+    margin: 0 0 5px;
+    font-size: 2.5em;
+}
+
+p {
+    color: var(--color-3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 40px;
+    background-color: var(--color-2);
+}
+
+header h1,
+header h2 {
+    color: var(--color-1);
+}
+
+header h2 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    padding: 0 40px;
+}
+
+.box {
+    background-color: hsl(from var(--color-1) h s calc(l + 3));
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin: 20px 0;
+}
+
+ul {
+    columns: 2;
+    padding-left: 20px;
+}
+
+li {
+    margin: 2px 0;
+}
+
+li::marker {
+    color: var(--color-4);
+}
+
+a {
+    color: var(--color-2);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-5);
+}
